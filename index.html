@@ -60,7 +60,7 @@
         <div class="container">
           <div class="hero-name">
             <h1>Эффективные решения для вашего бизнеса</h1>
-            <button class="hero-button" type="button">Заказать услугу</button>
+            <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
           </div>
         </div>
       </section>
@@ -416,6 +416,41 @@
         </div>
       </div>
     </footer>
-    <script src="../goit-markup-hw-05/modal.js"></script>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <svg class="close-button" width="30" height="30" data-modal-close>
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
+
+<!-- 
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal-form">
+    <button type="button" data-modal-close>
+      <svg class="close-button" width="30" height="30">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal-paragraph">Оставьте свои данные, мы вам перезвоним</p>
+    <form>
+      <label for="">
+        Имя
+        <input type="text" name="user-name" class="modal-form-input" required />
+      </label>
+      <label for="">
+        Телефон
+        <input type="tel" name="user-tel" class="modal-form-input" required />
+      </label>
+      <label for="">
+        Почта
+        <input type="email" name="user-email" class="modal-form-input" required />
+      </label>
+    </form>
+  </div>
+</div> -->
